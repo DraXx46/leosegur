@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação de Câmeras de Segurança</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes da Instalação de Câmeras de Segurança</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar à Página Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="detalhes-servico">
+        <h2>Instalação de Câmeras de Segurança</h2>
+        <div class="servico-detalhes">
+            <img src="camera.jpg" alt="Instalação de Câmeras de Segurança">
+            <img src="camera2.jpg" alt="Instalação de Câmeras de Segurança">
+            <p>Preço: Sob Consulta</p>
+            <p>Tempo para realizar o serviço: 3 horas</p>
+            <p>Dias de atendimento: Segunda a Sábado</p>
+            <p>Horários de atendimento: 9h às 18h</p>
+            <p>Aumente a segurança de sua residência com a instalação de câmeras de segurança de alta qualidade. Proteja sua casa e entes queridos com nosso serviço profissional de instalação de câmeras.</p>
+            <a href="#" onclick="abrirModal()">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Vídeo incorporado do YouTube -->
+    <section id="video">
+        <h2>Vídeo Relacionado</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SEUIDDOYOUTUBE" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Modal de Solicitação de Orçamento -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Solicitar Orçamento</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <!-- Outros campos do formulário -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Seu Nome - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

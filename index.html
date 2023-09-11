@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Residencial</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Inclua as bibliotecas do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Estilo para a logo -->
+    <style>
+        #logo {
+            max-width: 100px; /* Defina o tamanho máximo da logo */
+            margin: 10px; /* Ajuste as margens conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo da Sua Empresa" id="logo">
+        <h1>Segurança Residencial</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrossel de Serviços ocupando a tela inteira -->
+    <div id="servicos-carrossel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+            <li data-target="#servicos-carrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#servicos-carrossel" data-slide-to="1"></li>
+            <li data-target="#servicos-carrossel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Serviço 1 -->
+            <div class="carousel-item active">
+                <a href="servico1.html">
+                    <img src="2.jpg" alt="Instalação de Alarmes Residenciais" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Instalação de Alarmes Residenciais</h3>
+                        <p>Proteja sua casa com nossos sistemas de alarme residencial de última geração.</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Serviço 2 -->
+            <div class="carousel-item">
+                <a href="servico2.html">
+                    <img src="1.jpg" alt="Instalação de Câmeras de Segurança" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Instalação de Câmeras de Segurança</h3>
+                        <p>Aumente a segurança de sua residência com câmeras de segurança de alta qualidade.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Serviço 3 (Junção dos Serviços 1 e 2) -->
+            <div class="carousel-item">
+                <a href="servico3.html">
+                    <img src="3.jpg" alt="Soluções de Segurança Residencial" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Soluções de Segurança Residencial</h3>
+                        <p>Proteja sua casa com nossos serviços completos de segurança residencial, incluindo instalação de alarmes e câmeras de segurança.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Controles de Navegação -->
+        <a class="carousel-control-prev" href="#servicos-carrossel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#servicos-carrossel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Seção "Sobre" -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos especializados em fornecer soluções de segurança residencial de alta qualidade para proteger você e sua família. Nossa equipe de profissionais experientes está comprometida em garantir a segurança da sua residência.</p>
+        <a href="sobre.html">Saiba mais sobre nós</a>
+    </section>
+
+    <!-- Seção "Nossos Serviços" -->
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servico">
+            <h3>Instalação de Alarmes Residenciais</h3>
+            <p>Proteja sua casa com nossos sistemas de alarme residencial de última geração. Oferecemos soluções personalizadas para atender às suas necessidades de segurança.</p>
+            <a href="servico1.html">Saiba mais</a>
+        </div>
+        <div class="servico">
+            <h3>Instalação de Câmeras de Segurança</h3>
+            <p>Aumente a segurança de sua residência com câmeras de segurança de alta qualidade. Nossos especialistas irão ajudá-lo a escolher e instalar o sistema de câmeras ideal para sua casa.</p>
+            <a href="servico2.html">Saiba mais</a>
+        </div>
+        <div class="servico">
+            <h3>Monitoramento 24 horas</h3>
+            <p>Garanta a tranquilidade de sua família com nosso serviço de monitoramento 24 horas. Estamos sempre de olho na segurança de sua residência, prontos para agir em caso de qualquer incidente.</p>
+            <a href="servico3.html">Saiba mais</a>
+        </div>
+    </section>   
+
+    <!-- Seção "Contato" -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para obter mais informações ou solicitar um orçamento. Preencha o formulário abaixo e responderemos o mais rápido possível.</p>
+
+        <div class="contato-formulario">
+            <form action="processar_contato.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <div class="informacoes-contato">
+            <h3>Informações de Contato</h3>
+            <p>Telefone: (49) 98847-4623</p>
+            <p>E-mail: wincklerleonardo12@gmail.com</p>
+            <p>R. Condá, 950 - Santa Maria, Chapecó - SC, 89812-250</p>
+            <p>Redes Sociais:</p>
+            <ul>
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Outras seções e conteúdo -->
+
+    <footer>
+        <p>&copy; 2023 Leonardo Winckler - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
